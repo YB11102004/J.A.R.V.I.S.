@@ -1,6 +1,8 @@
 from openai import OpenAI
 import pyttsx3
 
+# https://github.com/marketplace/models/catalog - use this link to set up a new token for the OpenAI GPT-4o model
+
 engine = pyttsx3.init()
 def respond_to_question(question):
     question = question.lower()
