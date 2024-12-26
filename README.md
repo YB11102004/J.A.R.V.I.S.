@@ -13,7 +13,7 @@
 - 🎬 **YouTube**: Search for and open videos on YouTube.
 - 💬 **WhatsApp**: Search contacts and send messages on WhatsApp.
 - 🌍 **Translation**: Translate speech and text between different languages.
-- ❓ **Questions**: Answer basic human questions and engage in simple Q&A using OpenAI GPT-4o.
+- ❓ **Questions**: Answer basic human questions and engage in simple Q&A using OpenAI GPT-4o API.
 
 ---
 
