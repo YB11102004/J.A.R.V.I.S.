@@ -8,6 +8,7 @@ import pyttsx3
 import speech_recognition as sr
 from authentication import authenticate_user
 from questions import respond_to_question
+from datetime import datetime
 from Spotify import search_song, play_song, pause_song
 from Youtube import open_youtube, search_video
 from translator import main_for_speech
@@ -182,8 +183,12 @@ def listen_and_respond():
 
                 elif "translate" in question:
                     main_for_speech()
+                elif "date and time" in question:
+                    now = datetime.now()
+                    current_time = now.strftime("%Y-%m-%d %H:%M:%S")
+                    engine.say("Current Date and Time is" + current_time)
+                    engine.runAndWait()
                 else:
-                    # Default behavior for other questions
                     response = respond_to_question(question)
                     if response:
                         engine.say(response)
